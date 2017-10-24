@@ -1,7 +1,7 @@
 # [Hultnér QuickBits](https://hultner.github.io)
 ## Reflect a PostgreSQL view in Python's SQLAlchemy
 **I ran into this problem a while ago**, where I had a simple view created
-by joining two tables with a 1:1 relationship in postgresql but SQLAlchemy
+by joining two tables with a 1:1 relationship in PostgreSQL but SQLAlchemy
 didn't like my view.
 
 ### Background
@@ -19,13 +19,13 @@ as a hash while views in PostgreSQL can't. Clearly a point of conflict.
 ### A problematic domain model – sample code attached
 I've oversimplified the model and view to press on the actual issue and not
 steer focus towards unrelated code. In my case we've got a base model for
-`Fields` followed by a couple of related models for specialized instances of
+`Fields` followed by a couple of related models for specialised instances of
 these fields. One such is `Template_Field` shown below, this is a mere extension
 of the common field type and is never accessed directly but rather through the
 view named `Template_Field_View`.
 
 #### Field.psql
-```PLpgSQL
+```plpgsql
 CREATE TABLE IF NOT EXISTS quick_bits.Field (
     id             serial PRIMARY KEY,
     order_Index    INTEGER,
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS quick_bits.Field (
 #### Template_Field.psql
 Templates in them self are not interesting for this obstacle and are thus left
 out, however I left the relation in Template_Field for illustrative purposes.
-```PLpgSQL
+```psql
 CREATE TABLE IF NOT EXISTS quick_bits.Template_Field(
     template    integer REFERENCES quick_bits.Template(id),
     field       integer PRIMARY KEY REFERENCES quick_bits.Field(id),
@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS quick_bits.Template_Field(
 ```
 
 #### Template_Field_View.psql
-```PLpgSQL
+```sql
 CREATE OR REPLACE VIEW quick_bits.template_field_view AS
   SELECT
     field.id,
@@ -64,7 +64,7 @@ CREATE OR REPLACE VIEW quick_bits.template_field_view AS
 The most naïve approach for me were to just try reflecting the view straight
 away as a table with SQLAlchemy in my python code.
 
-```Python
+```python
 """
 
 ...
@@ -118,7 +118,7 @@ As we already got a field id which is unique we could try forcing SQLAlchemy
 into thinking it's a primary key.
 
 My first approach were something along these lines.
-```Python
+```python
 class TemplateFieldView(Base):
     __table__ = init_table('template_field_view')
     id = Column(Integer, primary_key=True)
@@ -142,7 +142,7 @@ representation.
 ### The solution
 So how do we circumvent this dilemma, after some searching I found the
 `__mapper_args__` property. We can use this to change the behaviour of columns
-in the table/view. Read more at [SQLAchemy Docs]( http://docs.sqlalchemy.org/en/latest/faq/ormconfiguration.html#how-do-i-map-a-table-that-has-no-primary-key).
+in the table/view. Read more at [SQLAlchemy Docs]( http://docs.sqlalchemy.org/en/latest/faq/ormconfiguration.html#how-do-i-map-a-table-that-has-no-primary-key).
 
 So now I have the following code.
 ```python

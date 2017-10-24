@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS quick_bits.Field (
 #### Template_Field.psql
 Templates in them self are not interesting for this obstacle and are thus left
 out, however I left the relation in Template_Field for illustrative purposes.
-```psql
+```plpgsql
 CREATE TABLE IF NOT EXISTS quick_bits.Template_Field(
     template    integer REFERENCES quick_bits.Template(id),
     field       integer PRIMARY KEY REFERENCES quick_bits.Field(id),
@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS quick_bits.Template_Field(
 ```
 
 #### Template_Field_View.psql
-```sql
+```plpgsql
 CREATE OR REPLACE VIEW quick_bits.template_field_view AS
   SELECT
     field.id,

@@ -4,6 +4,8 @@ A trivial way to make a Python Enum based on string tokens JSON-serializable, in
 
 **pet.py**
 ```python
+from enum import Enum
+
 class PetType(str, Enum):
     CAT: str = "cat"
     DOG: str = "dog"

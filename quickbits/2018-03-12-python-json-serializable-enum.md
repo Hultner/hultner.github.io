@@ -24,4 +24,8 @@ Let's test it out in our interpeter
 Works as expected.
 No need for a custom JSONEncoder, str is already serializable.
 The built in [IntEnum](https://github.com/python/cpython/blob/3.6/Lib/enum.py#L639) 
-works the same way
+works the same way.
+
+This applies for other classes as well. You could i.e. let a class inherit dict
+to gain all properties from a dict i.e. Python serializing while adding your 
+own custom implementation details.

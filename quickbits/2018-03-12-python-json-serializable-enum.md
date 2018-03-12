@@ -3,7 +3,7 @@
 A trivial way to make a Python Enum based on string tokens JSON-serializable 
 is to inherit both str and Enum. Look at the example below for some pointers.
 
-**pet.py**
+**pet.py**[[code]](https://github.com/Hultner/hultner.github.io/blob/master/quickbits/code/pet.py)
 ```python
 from enum import Enum
 

@@ -36,7 +36,7 @@ works the same way, in fact that's how I figured it out.
 
 ## Taking it further
 
-This applies for other classes as well. E.g. let a class inherit dict, gain all 
-properties; including JSON serialization with the default encoder.   
+This applies for other classes as well. E.g. let a class inherit dict to gain 
+it's properties; including JSON serialization with the default encoder.   
 
 

@@ -20,7 +20,7 @@ class PetType(str, Enum):
 ```
 
 
-Let's test it out in our interpeter
+Let's test it out in our interpreter
 ```python
 >>> import json
 >>> import pet

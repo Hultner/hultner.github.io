@@ -1,4 +1,4 @@
-# [WIP] Python Enum to JSON
+# [WIP] Convert a Python Enum to JSON
 
 **A trivial way to make a Python Enum which is based on string tokens 
 JSON-serializable is to inherit both str and Enum. 

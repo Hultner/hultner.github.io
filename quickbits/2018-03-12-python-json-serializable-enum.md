@@ -1,7 +1,14 @@
 # [WIP] Python Enum to JSON
 
-A trivial way to make a Python Enum based on string tokens JSON-serializable 
-is to inherit both str and Enum. Look at the example below for some pointers.
+**A trivial way to make a Python Enum which is based on string tokens 
+JSON-serializable is to inherit both str and Enum. 
+Look at the example below for some pointers.**
+
+
+## How? 
+
+I've prepared a quick demo below. 
+Once I figured it out I laughed at myself for not seeing it earlier.
 
 **pet.py**[[code]](https://github.com/Hultner/hultner.github.io/blob/master/quickbits/code/pet.py)
 ```python
@@ -21,11 +28,15 @@ Let's test it out in our interpeter
 '["cat", "dog"]'
 ```
 
-Works as expected.
+It's really that easy!  
 No need for a custom JSONEncoder, str is already serializable.
 The built in [IntEnum](https://github.com/python/cpython/blob/3.6/Lib/enum.py#L639) 
-works the same way.
+works the same way, in fact that's how I figured it out.
 
-This applies for other classes as well. You could i.e. let a class inherit dict
-to gain all properties from a dict i.e. Python serializing while adding your 
-own custom implementation details.
+
+## Taking it further
+
+This applies for other classes as well. Let a class inherit dict, gain all 
+properties, including JSON serialization with the default encoder.   
+
+

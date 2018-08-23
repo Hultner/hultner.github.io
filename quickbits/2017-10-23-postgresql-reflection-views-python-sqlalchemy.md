@@ -1,4 +1,4 @@
-# [Hultnér QuickBits](https://hultner.github.io)
+# [Hultnér QuickBits](https://hultner.se)
 ## Reflect a PostgreSQL view in Python's SQLAlchemy
 **I ran into this problem a while ago**, where I had a simple view created
 by joining two tables with a 1:1 relationship in PostgreSQL but SQLAlchemy

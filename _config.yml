@@ -2,6 +2,9 @@ name: Alexander Hultnér Blog | Hultner.se
 description: Personal views and reflections.
 url: https://hultner.se
 
+theme: minima
+exluced: [CNAME, .gitignore]
+
 footer-links:
     github: hultner
     twitter: ahultner

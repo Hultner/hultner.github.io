@@ -1,6 +1,6 @@
 ---
 ---
-# Alexander Hultnér Blog | Hultner.se
+# Alexander Hultnér Blog – Hultner.se
 Personal views and reflections
 
 ## Articles

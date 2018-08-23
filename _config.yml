@@ -1,2 +1,9 @@
-title: Alexander Hultnér Blog | Hultner.se
+name: Alexander Hultnér Blog | Hultner.se
 description: Personal views and reflections.
+url: https://hultner.se
+
+footer-links:
+    github: hultner
+    twitter: ahultner
+    linkedin: hultner
+

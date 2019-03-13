@@ -1,0 +1,127 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700");
+body {
+  background: white;
+  margin: 0 auto;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  color: #2C3E50;
+}
+
+main, footer > div {
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 4em 1em;
+}
+
+h1,
+h2,
+strong {
+  color: #2C3E50;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+code,
+pre {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1em;
+  border-left: 2px solid #69c;
+}
+
+a {
+  color: #FC4349;
+}
+
+header {
+  background-color: #1D2326;
+  background-image: linear-gradient(rgba(44, 62, 80, 0.5), rgba(44, 62, 80, 0.95)), url("/img/bg.jpg");
+  background-position: 0% 18%;
+  padding: 4em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-shadow: 0px 0px 80px black;
+}
+
+header a {
+  border: 1px solid #FC4349;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+  text-shadow: 0px 0px 80px black;
+}
+
+header a:hover {
+  background: #FC4349;
+  color: white;
+}
+
+#logo-container {
+  margin: 0px auto;
+  width: 80px;
+  padding: 20px;
+  background-color: #FC4349;
+  border-radius: 220px;
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.3);
+  vertical-align: top;
+  /*border: 1px solid #BF3F3F;*/
+}
+
+#logo {
+  fill: white;
+}
+
+footer {
+  background: #2C3E50;
+  color: #D7DADB;
+}
+
+footer a {
+  color: #D7DADB;
+}
+
+footer strong {
+  color: white;
+}
+
+/*footer address{
+  float: right;
+  clear:both;
+}*/

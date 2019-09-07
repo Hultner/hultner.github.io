@@ -2,12 +2,23 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700");
+html {
+  height: 100%;
+}
+
 body {
   background: white;
   margin: 0 auto;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
   color: #2C3E50;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+body > main {
+  flex-grow: 1;
 }
 
 main, footer > div {
@@ -125,3 +136,5 @@ footer strong {
   float: right;
   clear:both;
 }*/
+
+/*# sourceMappingURL=style.css.map */

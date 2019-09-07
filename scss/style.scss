@@ -94,7 +94,7 @@ a {
 header{
   background-color: $header-bg-color;
   background-image: linear-gradient(rgba(44, 62, 80, 0.5), rgba(44, 62, 80, 0.95)), url('/img/bg.jpg');
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('/img/bg.jpg');
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('/img/bg.jpg');
   background-position: 0% 18%;
   padding: 4em;
   background-repeat: no-repeat;

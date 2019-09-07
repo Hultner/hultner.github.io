@@ -27,8 +27,9 @@ $code-text: #a7adba;
 $header-shadow: 0px 0px 100px 0px rgba(0,0,0,0.3);
 $header-text-shadow: 0px 0px 80px black;
 
-
-
+html {
+  height: 100%;
+}
 
 body {
   background: $background-white;
@@ -36,6 +37,13 @@ body {
   font-family: $font-stack;
   line-height: 1.5;
   color: $text-color;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+body > main {
+  flex-grow:1; 
 }
 
 main, footer>div {

@@ -19,7 +19,7 @@ body > main {
 
 header {
   background-color: #1D2326;
-  background-image: linear-gradient(rgba(44, 62, 80, 0.5), rgba(44, 62, 80, 0.95));
+  background-image: linear-gradient(rgba(44, 62, 80, 0.5), rgba(44, 62, 80, 0.95)), url("/img/bg-compressed.jpg");
   background-position: 0% 18%;
   padding: 4em;
   background-repeat: no-repeat;

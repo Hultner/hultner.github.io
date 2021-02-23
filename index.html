@@ -1,107 +1,287 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Hultnér Technologies</title>
 
-  <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin />
-  
-  <link rel="preload"
-        as="style"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" />
-  
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
-        media="print" onload="this.media='all'" />
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+    onload="this.rel='stylesheet'" />
+
+  <!-- <link rel="stylesheet" -->
+  <!--       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" -->
+  <!--       media="print" onload="this.media='all'" /> -->
+
   <noscript>
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" />
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" />
   </noscript>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fc4349">
-  <meta name="msapplication-TileColor" content="#fc4349">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fc4349" />
+  <meta name="msapplication-TileColor" content="#fc4349" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description"
+    content="Hultnér Technologies specializes in digital product development, system architecture, technical speaking, and courses. Our primary focus and expertise is in Python and the React/JavaScript ecosystems." />
 </head>
+
 <body>
   <header>
-  <div id="logo-container">
-    <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><path d="M0 278.96c2.68-.08 4.6-.69 5.75-1.84s1.8-2.51 1.96-4.08c.15-1.57.23-4.31.23-8.22v-49.68c0-3.22.11-5.98.34-8.28l-8.28.46v-5.06h25.87v3.79c-2.68.08-4.6.69-5.75 1.84-1.15 1.15-1.8 2.51-1.95 4.08-.15 1.57-.23 4.31-.23 8.22v19.09h41.17v-24.15c0-3.22.11-5.98.34-8.28l-8.28.46v-5.06h25.87v3.79c-2.68.08-4.6.69-5.75 1.84-1.15 1.15-1.8 2.51-1.95 4.08-.15 1.57-.23 4.31-.23 8.22v48.87c0 4.06-.11 7.09-.34 9.08l8.28-.46v5.06H51.17v-3.79c2.68-.08 4.6-.69 5.75-1.84 1.15-1.15 1.8-2.51 1.95-4.08.15-1.57.23-4.31.23-8.22v-20.93l-41.17.46v24.72c0 4.06-.11 7.09-.34 9.08l8.28-.46v5.06H0v-3.77zM100.56 281.03c-3.3-2.01-5.66-5.1-7.08-9.26s-2.13-9.65-2.13-16.46v-16.34c0-3.43.11-6.55.32-9.34l-5.79.24v-3.46h18.03v2.66c-2.36 0-3.86.62-4.51 1.85-.64 1.24-.97 2.74-.97 4.51v20.28c0 4.67.41 8.71 1.25 12.12.83 3.41 2.47 6.2 4.91 8.37 2.44 2.18 5.94 3.26 10.51 3.26 5.58 0 9.73-1.92 12.44-5.76 2.71-3.83 4.12-9.06 4.22-15.65l.24-22.62c0-2.25.08-4.19.24-5.8l-5.72.33v-3.54h14.97v2.66c-1.93.06-3.3.48-4.1 1.29-.81.8-1.26 1.76-1.37 2.86-.11 1.1-.16 3.02-.16 5.75l-.16 18.68c-.05 7.78-1.78 14.13-5.19 19.04-3.41 4.91-8.9 7.37-16.46 7.37-5.7-.02-10.19-1.03-13.49-3.04zM148.33 280.1c1.88-.05 3.22-.48 4.02-1.29s1.26-1.76 1.37-2.85c.11-1.1.16-3.02.16-5.76v-34.77c0-2.25.08-4.19.24-5.8l-5.8.33v-3.54h18.11v2.66c-1.88.06-3.22.48-4.02 1.29s-1.26 1.76-1.37 2.86c-.11 1.1-.16 3.02-.16 5.75v34.53c0 2.79-.08 4.88-.24 6.28l15.05-.24c3.43-.05 6.01-1.14 7.73-3.26 1.72-2.12 2.58-5.52 2.58-10.18h2.74l-.48 16.66h-39.93v-2.67zM202.42 280.1c2.3-.11 3.79-.75 4.46-1.93.67-1.18 1.01-3.01 1.01-5.48v-2.49l.08-40.81-8.29.08c-3.33 0-5.7 1.11-7.12 3.34-1.42 2.23-2.13 5.76-2.13 10.59h-2.98l.48-16.99h46.93l.48 16.99h-3.06c-.06-3.38-.39-6.08-1.01-8.09s-1.67-3.52-3.14-4.51c-1.47-1-3.58-1.49-6.32-1.49h-6.84l-.08 43.87c0 2.85-.08 4.96-.24 6.36l6.68-.32v3.54h-18.92v-2.66zM250.72 237.12h-.08l.24 34.45c0 3.6-.05 6.25-.16 7.97l5.79-.32v3.54h-14.73v-2.66c2.15 0 3.57-.61 4.27-1.85.7-1.23 1.05-2.74 1.05-4.51l.08-44.11-5.39.33v-3.54h9.58l34.29 45.88h.08l.08-36.87c0-2.25.08-4.19.24-5.8l-5.8.33v-3.54h14.81v2.66c-1.61.06-2.81.36-3.58.93-.78.56-1.27 1.33-1.49 2.29-.22.97-.32 2.26-.32 3.87v2.82l-.16 45.08h-3.87l-34.93-46.95zM302.97 280.1c1.88-.05 3.22-.48 4.02-1.29s1.26-1.76 1.37-2.85c.11-1.1.16-3.02.16-5.76v-34.77c0-2.25.08-4.19.24-5.8l-5.79.33v-3.54h38.72l.4 14.09h-2.66c0-4.4-.95-7.41-2.86-9.02-1.9-1.61-4.58-2.36-8.01-2.25l-6.92.16c-1.93.06-3.33.42-4.19 1.09-.86.67-1.4 1.61-1.61 2.82-.21 1.21-.32 3.1-.32 5.67v12.88l15.13.08-.56-6.92h3.54v16.9h-2.66c0-1.99-.24-3.5-.72-4.55-.48-1.05-1.22-1.74-2.22-2.09-.99-.35-2.37-.52-4.14-.52l-2.49.08-5.88.24v18.43c0 2.79-.08 4.88-.24 6.28l15.37-.24c3.75-.05 6.63-1.01 8.62-2.86 1.98-1.85 2.98-5.06 2.98-9.62h2.74l-.48 15.7h-41.53v-2.67zm30.66-65.68c1.72-1.07 2.58-2.25 2.58-3.54 0-.7-.16-1.26-.48-1.69-.16-.21-.44-.44-.84-.68-.4-.24-.87-.36-1.41-.36-.97 0-2.01.48-3.14 1.45l-10.14 9.66 1.77 2.34 11.66-7.18zM353.03 280.1c1.88-.05 3.22-.48 4.02-1.29s1.26-1.76 1.37-2.85c.11-1.1.16-3.02.16-5.76v-34.77c0-2.25.08-4.19.24-5.8l-5.79.33v-3.54c5.58-.11 9.79-.16 12.64-.16 2.58 0 4.51.03 5.8.08 7.57.11 13.1 1.38 16.62 3.82 3.51 2.44 5.27 5.97 5.27 10.59.05 3.7-1.05 7.03-3.3 9.98s-6.17 4.99-11.75 6.12c.91.7 1.74 1.53 2.5 2.49.75.97 1.77 2.47 3.06 4.51l5.48 8.61c1.18 1.88 2.16 3.31 2.94 4.31.78.99 1.72 1.8 2.82 2.41 1.1.61 2.45.92 4.06.92v2.66h-10.14c-1.45-1.23-2.67-2.51-3.66-3.82-1-1.32-2.16-3.02-3.51-5.11l-5.39-8.62-1.05-1.69c-.86-1.45-1.61-2.63-2.25-3.54s-1.34-1.72-2.09-2.41c-.48.06-1.23.08-2.25.08-1.45 0-2.53-.02-3.22-.08v15.61c0 2.85-.08 4.96-.24 6.36l5.79-.32v3.54h-18.11v-2.66zm32.52-38.48c0-4.08-1.18-7.14-3.54-9.18-2.36-2.04-5.98-3.06-10.87-3.06-1.88 0-3.22.38-4.02 1.13-.8.75-1.26 1.66-1.37 2.74s-.16 2.98-.16 5.71v15.46c1.61.11 2.79.16 3.54.16 10.95.01 16.42-4.32 16.42-12.96zM17.99 361.04c1.92-.09 3.16-.63 3.72-1.61.56-.98.84-2.51.84-4.56v-2.08l.07-34.01-6.91.07c-2.77 0-4.75.93-5.94 2.78-1.19 1.86-1.78 4.8-1.78 8.82H5.51l.4-14.16h39.11l.4 14.16h-2.55c-.05-2.82-.33-5.06-.84-6.74-.52-1.68-1.39-2.93-2.62-3.75-1.23-.83-2.98-1.24-5.27-1.24h-5.7l-.07 36.56c0 2.37-.07 4.14-.2 5.3l5.57-.27v2.95H17.99v-2.22zM49.55 361.7c1.09-.03 1.88-.28 2.35-.75.47-.47.74-1.03.8-1.67.06-.64.09-1.76.09-3.35v-20.29c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h22.58l.24 8.22h-1.55c0-2.57-.56-4.32-1.67-5.26-1.11-.94-2.67-1.38-4.67-1.31l-4.04.09c-1.13.03-1.94.25-2.44.63-.5.39-.81.94-.94 1.65-.12.7-.19 1.81-.19 3.31v7.51l8.83.05-.33-4.04h2.07v9.86h-1.55c0-1.16-.14-2.04-.42-2.65-.28-.61-.71-1.02-1.29-1.22-.58-.2-1.39-.31-2.42-.31l-1.46.05-3.43.14v10.75c0 1.63-.05 2.85-.14 3.66l8.97-.14c2.19-.03 3.87-.59 5.03-1.67 1.16-1.08 1.74-2.95 1.74-5.61h1.6l-.28 9.16H49.55v-1.55zM86.05 361.8c-2.43-1.47-4.32-3.47-5.68-6.01-1.36-2.53-2.04-5.35-2.04-8.45 0-3.06.62-5.95 1.85-8.64 1.24-2.69 3.08-4.87 5.54-6.55 2.46-1.67 5.42-2.51 8.9-2.51 3.44 0 6.61.96 9.49 2.86l-.24-2.53h2.54v10.89h-1.69c-.31-2.91-1.34-5.19-3.07-6.83-1.74-1.64-3.97-2.47-6.69-2.47-2.22 0-4.25.62-6.08 1.86s-3.28 3-4.34 5.28c-1.06 2.29-1.6 4.93-1.6 7.94 0 2.88.56 5.46 1.69 7.72 1.13 2.27 2.64 4.04 4.56 5.31 1.91 1.27 4.02 1.9 6.34 1.9 2.1 0 4.12-.47 6.06-1.41a12.64 12.64 0 0 0 4.79-3.99l1.22.98c-1.82 2.54-3.9 4.31-6.24 5.33-2.35 1.02-4.69 1.52-7.04 1.52-3.09 0-5.84-.73-8.27-2.2zM111.57 361.7c1.09-.03 1.88-.28 2.35-.75.47-.47.74-1.03.8-1.67.06-.64.09-1.76.09-3.35v-20.29c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h10.56v1.55c-1.1.03-1.88.28-2.35.75-.47.47-.74 1.02-.8 1.67-.06.64-.09 1.76-.09 3.36v7.8h16.81v-9.86c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h10.56v1.55c-1.1.03-1.88.28-2.35.75-.47.47-.74 1.02-.8 1.67-.06.64-.1 1.76-.1 3.36v19.96c0 1.66-.05 2.89-.14 3.71l3.38-.19v2.07h-10.56v-1.55c1.09-.03 1.88-.28 2.35-.75.47-.47.74-1.03.8-1.67.06-.64.1-1.76.1-3.35v-8.55l-16.81.19v10.09c0 1.66-.05 2.89-.14 3.71l3.38-.19v2.07h-10.56v-1.57zM153.51 336.63h-.05l.14 20.1c0 2.1-.03 3.65-.09 4.65l3.38-.19v2.07h-8.59v-1.55c1.25 0 2.08-.36 2.49-1.08.41-.72.61-1.6.61-2.63l.05-25.73-3.15.19v-2.07h5.59l20 26.76h.05l.05-21.5c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h8.64v1.55c-.94.03-1.64.21-2.09.54-.46.33-.75.78-.87 1.34s-.19 1.31-.19 2.25v1.65l-.1 26.29h-2.25l-20.38-27.38zM190.65 361.51c-2.5-1.66-4.35-3.79-5.54-6.41-1.19-2.61-1.78-5.38-1.78-8.29 0-2.78.62-5.49 1.85-8.12 1.24-2.63 3.08-4.79 5.54-6.5 2.46-1.7 5.44-2.56 8.95-2.56 3.6 0 6.66.85 9.18 2.56 2.52 1.71 4.41 3.87 5.66 6.5s1.88 5.34 1.88 8.12c0 2.76-.62 5.46-1.86 8.1-1.24 2.64-3.08 4.82-5.54 6.53-2.46 1.7-5.44 2.56-8.95 2.56-3.76 0-6.89-.83-9.39-2.49zm15.75-1.52c1.74-1.39 3.05-3.18 3.95-5.38.89-2.19 1.34-4.49 1.34-6.9 0-2.66-.49-5.23-1.46-7.72-.97-2.49-2.38-4.52-4.23-6.1-1.85-1.58-4-2.38-6.48-2.38-2.44 0-4.54.7-6.29 2.09-1.75 1.4-3.07 3.2-3.97 5.42-.89 2.22-1.34 4.54-1.34 6.95 0 2.47.45 4.95 1.36 7.44.91 2.49 2.28 4.56 4.13 6.2 1.85 1.65 4.08 2.47 6.71 2.47 2.46 0 4.54-.7 6.28-2.09zM220.6 361.7c1.1-.03 1.88-.28 2.35-.75.47-.47.74-1.03.8-1.67.06-.64.09-1.76.09-3.35v-20.29c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h10.57v1.55c-1.1.03-1.88.28-2.35.75-.47.47-.74 1.02-.8 1.67-.06.64-.09 1.76-.09 3.36v20.14c0 1.63-.05 2.85-.14 3.66l8.78-.14c2-.03 3.51-.66 4.51-1.9 1-1.24 1.5-3.22 1.5-5.94h1.59l-.28 9.72H220.6v-1.55zM253.71 361.51c-2.51-1.66-4.35-3.79-5.54-6.41-1.19-2.61-1.78-5.38-1.78-8.29 0-2.78.62-5.49 1.86-8.12 1.23-2.63 3.08-4.79 5.54-6.5 2.46-1.7 5.44-2.56 8.95-2.56 3.6 0 6.66.85 9.18 2.56 2.52 1.71 4.41 3.87 5.66 6.5s1.88 5.34 1.88 8.12c0 2.76-.62 5.46-1.86 8.1-1.24 2.64-3.08 4.82-5.54 6.53-2.46 1.7-5.44 2.56-8.95 2.56-3.77 0-6.9-.83-9.4-2.49zm15.75-1.52c1.74-1.39 3.05-3.18 3.95-5.38.89-2.19 1.34-4.49 1.34-6.9 0-2.66-.49-5.23-1.46-7.72-.97-2.49-2.38-4.52-4.23-6.1-1.85-1.58-4.01-2.38-6.48-2.38-2.44 0-4.54.7-6.29 2.09-1.76 1.4-3.08 3.2-3.97 5.42-.89 2.22-1.34 4.54-1.34 6.95 0 2.47.46 4.95 1.36 7.44.91 2.49 2.28 4.56 4.13 6.2 1.85 1.65 4.08 2.47 6.71 2.47 2.45 0 4.54-.7 6.28-2.09zM291.37 362.01c-2.41-1.33-4.29-3.23-5.63-5.71-1.35-2.47-2.02-5.4-2.02-8.78 0-3.07.61-5.96 1.85-8.69 1.24-2.72 3.09-4.94 5.57-6.65 2.47-1.7 5.44-2.56 8.92-2.56 1.69 0 3.4.23 5.14.68 1.74.46 3.26 1.09 4.58 1.9l-.19-2.25h2.58v10.75h-1.69c-.22-2.88-1.26-5.13-3.12-6.76s-4.19-2.44-6.97-2.44c-2.22 0-4.25.64-6.08 1.93-1.83 1.28-3.29 3.06-4.37 5.33s-1.62 4.83-1.62 7.68c0 2.95.53 5.57 1.6 7.89 1.06 2.32 2.55 4.13 4.46 5.45 1.91 1.31 4.08 1.97 6.53 1.97 1.34 0 2.73-.19 4.16-.59 1.42-.39 2.72-.98 3.87-1.76v-10.29l-3.29.19v-2.07h10.61v1.55c-1.5 0-2.44.57-2.82 1.71s-.56 2.43-.56 3.87v7.18h-1.27c-1.32 0-3.01.4-5.07 1.22-.94.37-2.05.67-3.33.89-1.28.22-2.46.33-3.52.33-3.14.02-5.91-.64-8.32-1.97zM319.82 361.7c1.1-.03 1.88-.28 2.35-.75.47-.47.74-1.03.8-1.67.06-.64.09-1.76.09-3.35v-20.29c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h10.57v1.55c-1.1.03-1.88.28-2.35.75-.47.47-.74 1.02-.8 1.67-.06.64-.09 1.76-.09 3.36v19.96c0 1.66-.05 2.89-.14 3.71l3.38-.19v2.07h-10.57v-1.56zM335.55 361.7c1.1-.03 1.88-.28 2.35-.75.47-.47.74-1.03.8-1.67.06-.64.09-1.76.09-3.35v-20.29c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h22.59l.23 8.22h-1.55c0-2.57-.56-4.32-1.67-5.26-1.11-.94-2.67-1.38-4.67-1.31l-4.04.09c-1.13.03-1.94.25-2.44.63-.5.39-.81.94-.94 1.65-.13.7-.19 1.81-.19 3.31v7.51l8.83.05-.33-4.04h2.07v9.86h-1.55c0-1.16-.14-2.04-.42-2.65-.28-.61-.71-1.02-1.29-1.22-.58-.2-1.38-.31-2.42-.31l-1.46.05-3.43.14v10.75c0 1.63-.05 2.85-.14 3.66l8.97-.14c2.19-.03 3.87-.59 5.02-1.67s1.74-2.95 1.74-5.61h1.6l-.28 9.16h-24.23v-1.55zM371.31 363.39c-1.49-.41-2.79-1-3.92-1.78l.23 2.02h-2.44l-.28-10h1.83c.15 2.69 1.08 4.77 2.77 6.22 1.69 1.46 3.83 2.18 6.44 2.18 1.91 0 3.51-.52 4.81-1.57 1.3-1.05 1.95-2.48 1.95-4.29 0-1.35-.37-2.5-1.1-3.45a9.78 9.78 0 0 0-2.72-2.39c-1.08-.64-2.55-1.38-4.39-2.23-2.1-1-3.77-1.88-5-2.63a10.45 10.45 0 0 1-3.17-2.98c-.88-1.24-1.31-2.76-1.31-4.58 0-1.25.29-2.5.87-3.75.58-1.25 1.58-2.32 3.01-3.2 1.42-.88 3.31-1.31 5.66-1.31 1.41 0 2.82.18 4.25.54 1.42.36 2.73.98 3.92 1.86l-.19-2.02h2.39v10.33h-1.69c-.15-2.47-.94-4.56-2.37-6.27-1.42-1.7-3.42-2.56-5.99-2.56-1.88 0-3.35.53-4.41 1.57-1.06 1.05-1.59 2.36-1.59 3.92 0 1.25.36 2.33 1.08 3.24.72.91 1.6 1.66 2.63 2.26 1.03.59 2.49 1.33 4.37 2.2 2.13.97 3.84 1.85 5.14 2.63 1.3.79 2.4 1.81 3.31 3.08.91 1.27 1.36 2.83 1.36 4.67 0 1.76-.43 3.3-1.29 4.65-.86 1.34-2.12 2.39-3.78 3.14-1.66.75-3.63 1.13-5.92 1.13-1.5-.02-2.98-.22-4.46-.63z"/><g><path d="M196.41 31.17c10.8 0 19.55 8.75 19.55 19.55 0 10.79-8.75 19.55-19.55 19.55s-19.55-8.75-19.55-19.55c.01-10.79 8.76-19.55 19.55-19.55z"/><circle cx="246.68" cy="100.99" r="19.55"/><path d="M246.68 131.71c10.79 0 19.55 8.75 19.55 19.55 0 10.79-8.75 19.55-19.55 19.55s-19.55-8.76-19.55-19.55c.01-10.8 8.76-19.55 19.55-19.55zM196.41 131.71c10.8 0 19.55 8.75 19.55 19.55 0 10.79-8.75 19.55-19.55 19.55s-19.55-8.76-19.55-19.55c.01-10.8 8.76-19.55 19.55-19.55zM146.14 131.71c10.8 0 19.55 8.75 19.55 19.55 0 10.79-8.75 19.55-19.55 19.55s-19.55-8.76-19.55-19.55c.01-10.8 8.76-19.55 19.55-19.55z"/></g></svg>
-  </div>
-  <h1>Hultnér Technologies</h1>
-  <span id="cmocta"><script>document.getElementById("cmocta").innerHTML="<n uers=\"znvygb:pbagnpg@uhygare.fr\" gnetrg=\"_oynax\">./pbagnpg_hf</n>".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});</script>
-<noscript><span style="unicode-bidi:bidi-override;direction:rtl;">es.rentluh@tcatnoc</span></noscript></span>
-</header>
+    <div id="logo-container">
+      <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+        <path
+          d="M0 278.96c2.68-.08 4.6-.69 5.75-1.84s1.8-2.51 1.96-4.08c.15-1.57.23-4.31.23-8.22v-49.68c0-3.22.11-5.98.34-8.28l-8.28.46v-5.06h25.87v3.79c-2.68.08-4.6.69-5.75 1.84-1.15 1.15-1.8 2.51-1.95 4.08-.15 1.57-.23 4.31-.23 8.22v19.09h41.17v-24.15c0-3.22.11-5.98.34-8.28l-8.28.46v-5.06h25.87v3.79c-2.68.08-4.6.69-5.75 1.84-1.15 1.15-1.8 2.51-1.95 4.08-.15 1.57-.23 4.31-.23 8.22v48.87c0 4.06-.11 7.09-.34 9.08l8.28-.46v5.06H51.17v-3.79c2.68-.08 4.6-.69 5.75-1.84 1.15-1.15 1.8-2.51 1.95-4.08.15-1.57.23-4.31.23-8.22v-20.93l-41.17.46v24.72c0 4.06-.11 7.09-.34 9.08l8.28-.46v5.06H0v-3.77zM100.56 281.03c-3.3-2.01-5.66-5.1-7.08-9.26s-2.13-9.65-2.13-16.46v-16.34c0-3.43.11-6.55.32-9.34l-5.79.24v-3.46h18.03v2.66c-2.36 0-3.86.62-4.51 1.85-.64 1.24-.97 2.74-.97 4.51v20.28c0 4.67.41 8.71 1.25 12.12.83 3.41 2.47 6.2 4.91 8.37 2.44 2.18 5.94 3.26 10.51 3.26 5.58 0 9.73-1.92 12.44-5.76 2.71-3.83 4.12-9.06 4.22-15.65l.24-22.62c0-2.25.08-4.19.24-5.8l-5.72.33v-3.54h14.97v2.66c-1.93.06-3.3.48-4.1 1.29-.81.8-1.26 1.76-1.37 2.86-.11 1.1-.16 3.02-.16 5.75l-.16 18.68c-.05 7.78-1.78 14.13-5.19 19.04-3.41 4.91-8.9 7.37-16.46 7.37-5.7-.02-10.19-1.03-13.49-3.04zM148.33 280.1c1.88-.05 3.22-.48 4.02-1.29s1.26-1.76 1.37-2.85c.11-1.1.16-3.02.16-5.76v-34.77c0-2.25.08-4.19.24-5.8l-5.8.33v-3.54h18.11v2.66c-1.88.06-3.22.48-4.02 1.29s-1.26 1.76-1.37 2.86c-.11 1.1-.16 3.02-.16 5.75v34.53c0 2.79-.08 4.88-.24 6.28l15.05-.24c3.43-.05 6.01-1.14 7.73-3.26 1.72-2.12 2.58-5.52 2.58-10.18h2.74l-.48 16.66h-39.93v-2.67zM202.42 280.1c2.3-.11 3.79-.75 4.46-1.93.67-1.18 1.01-3.01 1.01-5.48v-2.49l.08-40.81-8.29.08c-3.33 0-5.7 1.11-7.12 3.34-1.42 2.23-2.13 5.76-2.13 10.59h-2.98l.48-16.99h46.93l.48 16.99h-3.06c-.06-3.38-.39-6.08-1.01-8.09s-1.67-3.52-3.14-4.51c-1.47-1-3.58-1.49-6.32-1.49h-6.84l-.08 43.87c0 2.85-.08 4.96-.24 6.36l6.68-.32v3.54h-18.92v-2.66zM250.72 237.12h-.08l.24 34.45c0 3.6-.05 6.25-.16 7.97l5.79-.32v3.54h-14.73v-2.66c2.15 0 3.57-.61 4.27-1.85.7-1.23 1.05-2.74 1.05-4.51l.08-44.11-5.39.33v-3.54h9.58l34.29 45.88h.08l.08-36.87c0-2.25.08-4.19.24-5.8l-5.8.33v-3.54h14.81v2.66c-1.61.06-2.81.36-3.58.93-.78.56-1.27 1.33-1.49 2.29-.22.97-.32 2.26-.32 3.87v2.82l-.16 45.08h-3.87l-34.93-46.95zM302.97 280.1c1.88-.05 3.22-.48 4.02-1.29s1.26-1.76 1.37-2.85c.11-1.1.16-3.02.16-5.76v-34.77c0-2.25.08-4.19.24-5.8l-5.79.33v-3.54h38.72l.4 14.09h-2.66c0-4.4-.95-7.41-2.86-9.02-1.9-1.61-4.58-2.36-8.01-2.25l-6.92.16c-1.93.06-3.33.42-4.19 1.09-.86.67-1.4 1.61-1.61 2.82-.21 1.21-.32 3.1-.32 5.67v12.88l15.13.08-.56-6.92h3.54v16.9h-2.66c0-1.99-.24-3.5-.72-4.55-.48-1.05-1.22-1.74-2.22-2.09-.99-.35-2.37-.52-4.14-.52l-2.49.08-5.88.24v18.43c0 2.79-.08 4.88-.24 6.28l15.37-.24c3.75-.05 6.63-1.01 8.62-2.86 1.98-1.85 2.98-5.06 2.98-9.62h2.74l-.48 15.7h-41.53v-2.67zm30.66-65.68c1.72-1.07 2.58-2.25 2.58-3.54 0-.7-.16-1.26-.48-1.69-.16-.21-.44-.44-.84-.68-.4-.24-.87-.36-1.41-.36-.97 0-2.01.48-3.14 1.45l-10.14 9.66 1.77 2.34 11.66-7.18zM353.03 280.1c1.88-.05 3.22-.48 4.02-1.29s1.26-1.76 1.37-2.85c.11-1.1.16-3.02.16-5.76v-34.77c0-2.25.08-4.19.24-5.8l-5.79.33v-3.54c5.58-.11 9.79-.16 12.64-.16 2.58 0 4.51.03 5.8.08 7.57.11 13.1 1.38 16.62 3.82 3.51 2.44 5.27 5.97 5.27 10.59.05 3.7-1.05 7.03-3.3 9.98s-6.17 4.99-11.75 6.12c.91.7 1.74 1.53 2.5 2.49.75.97 1.77 2.47 3.06 4.51l5.48 8.61c1.18 1.88 2.16 3.31 2.94 4.31.78.99 1.72 1.8 2.82 2.41 1.1.61 2.45.92 4.06.92v2.66h-10.14c-1.45-1.23-2.67-2.51-3.66-3.82-1-1.32-2.16-3.02-3.51-5.11l-5.39-8.62-1.05-1.69c-.86-1.45-1.61-2.63-2.25-3.54s-1.34-1.72-2.09-2.41c-.48.06-1.23.08-2.25.08-1.45 0-2.53-.02-3.22-.08v15.61c0 2.85-.08 4.96-.24 6.36l5.79-.32v3.54h-18.11v-2.66zm32.52-38.48c0-4.08-1.18-7.14-3.54-9.18-2.36-2.04-5.98-3.06-10.87-3.06-1.88 0-3.22.38-4.02 1.13-.8.75-1.26 1.66-1.37 2.74s-.16 2.98-.16 5.71v15.46c1.61.11 2.79.16 3.54.16 10.95.01 16.42-4.32 16.42-12.96zM17.99 361.04c1.92-.09 3.16-.63 3.72-1.61.56-.98.84-2.51.84-4.56v-2.08l.07-34.01-6.91.07c-2.77 0-4.75.93-5.94 2.78-1.19 1.86-1.78 4.8-1.78 8.82H5.51l.4-14.16h39.11l.4 14.16h-2.55c-.05-2.82-.33-5.06-.84-6.74-.52-1.68-1.39-2.93-2.62-3.75-1.23-.83-2.98-1.24-5.27-1.24h-5.7l-.07 36.56c0 2.37-.07 4.14-.2 5.3l5.57-.27v2.95H17.99v-2.22zM49.55 361.7c1.09-.03 1.88-.28 2.35-.75.47-.47.74-1.03.8-1.67.06-.64.09-1.76.09-3.35v-20.29c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h22.58l.24 8.22h-1.55c0-2.57-.56-4.32-1.67-5.26-1.11-.94-2.67-1.38-4.67-1.31l-4.04.09c-1.13.03-1.94.25-2.44.63-.5.39-.81.94-.94 1.65-.12.7-.19 1.81-.19 3.31v7.51l8.83.05-.33-4.04h2.07v9.86h-1.55c0-1.16-.14-2.04-.42-2.65-.28-.61-.71-1.02-1.29-1.22-.58-.2-1.39-.31-2.42-.31l-1.46.05-3.43.14v10.75c0 1.63-.05 2.85-.14 3.66l8.97-.14c2.19-.03 3.87-.59 5.03-1.67 1.16-1.08 1.74-2.95 1.74-5.61h1.6l-.28 9.16H49.55v-1.55zM86.05 361.8c-2.43-1.47-4.32-3.47-5.68-6.01-1.36-2.53-2.04-5.35-2.04-8.45 0-3.06.62-5.95 1.85-8.64 1.24-2.69 3.08-4.87 5.54-6.55 2.46-1.67 5.42-2.51 8.9-2.51 3.44 0 6.61.96 9.49 2.86l-.24-2.53h2.54v10.89h-1.69c-.31-2.91-1.34-5.19-3.07-6.83-1.74-1.64-3.97-2.47-6.69-2.47-2.22 0-4.25.62-6.08 1.86s-3.28 3-4.34 5.28c-1.06 2.29-1.6 4.93-1.6 7.94 0 2.88.56 5.46 1.69 7.72 1.13 2.27 2.64 4.04 4.56 5.31 1.91 1.27 4.02 1.9 6.34 1.9 2.1 0 4.12-.47 6.06-1.41a12.64 12.64 0 0 0 4.79-3.99l1.22.98c-1.82 2.54-3.9 4.31-6.24 5.33-2.35 1.02-4.69 1.52-7.04 1.52-3.09 0-5.84-.73-8.27-2.2zM111.57 361.7c1.09-.03 1.88-.28 2.35-.75.47-.47.74-1.03.8-1.67.06-.64.09-1.76.09-3.35v-20.29c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h10.56v1.55c-1.1.03-1.88.28-2.35.75-.47.47-.74 1.02-.8 1.67-.06.64-.09 1.76-.09 3.36v7.8h16.81v-9.86c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h10.56v1.55c-1.1.03-1.88.28-2.35.75-.47.47-.74 1.02-.8 1.67-.06.64-.1 1.76-.1 3.36v19.96c0 1.66-.05 2.89-.14 3.71l3.38-.19v2.07h-10.56v-1.55c1.09-.03 1.88-.28 2.35-.75.47-.47.74-1.03.8-1.67.06-.64.1-1.76.1-3.35v-8.55l-16.81.19v10.09c0 1.66-.05 2.89-.14 3.71l3.38-.19v2.07h-10.56v-1.57zM153.51 336.63h-.05l.14 20.1c0 2.1-.03 3.65-.09 4.65l3.38-.19v2.07h-8.59v-1.55c1.25 0 2.08-.36 2.49-1.08.41-.72.61-1.6.61-2.63l.05-25.73-3.15.19v-2.07h5.59l20 26.76h.05l.05-21.5c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h8.64v1.55c-.94.03-1.64.21-2.09.54-.46.33-.75.78-.87 1.34s-.19 1.31-.19 2.25v1.65l-.1 26.29h-2.25l-20.38-27.38zM190.65 361.51c-2.5-1.66-4.35-3.79-5.54-6.41-1.19-2.61-1.78-5.38-1.78-8.29 0-2.78.62-5.49 1.85-8.12 1.24-2.63 3.08-4.79 5.54-6.5 2.46-1.7 5.44-2.56 8.95-2.56 3.6 0 6.66.85 9.18 2.56 2.52 1.71 4.41 3.87 5.66 6.5s1.88 5.34 1.88 8.12c0 2.76-.62 5.46-1.86 8.1-1.24 2.64-3.08 4.82-5.54 6.53-2.46 1.7-5.44 2.56-8.95 2.56-3.76 0-6.89-.83-9.39-2.49zm15.75-1.52c1.74-1.39 3.05-3.18 3.95-5.38.89-2.19 1.34-4.49 1.34-6.9 0-2.66-.49-5.23-1.46-7.72-.97-2.49-2.38-4.52-4.23-6.1-1.85-1.58-4-2.38-6.48-2.38-2.44 0-4.54.7-6.29 2.09-1.75 1.4-3.07 3.2-3.97 5.42-.89 2.22-1.34 4.54-1.34 6.95 0 2.47.45 4.95 1.36 7.44.91 2.49 2.28 4.56 4.13 6.2 1.85 1.65 4.08 2.47 6.71 2.47 2.46 0 4.54-.7 6.28-2.09zM220.6 361.7c1.1-.03 1.88-.28 2.35-.75.47-.47.74-1.03.8-1.67.06-.64.09-1.76.09-3.35v-20.29c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h10.57v1.55c-1.1.03-1.88.28-2.35.75-.47.47-.74 1.02-.8 1.67-.06.64-.09 1.76-.09 3.36v20.14c0 1.63-.05 2.85-.14 3.66l8.78-.14c2-.03 3.51-.66 4.51-1.9 1-1.24 1.5-3.22 1.5-5.94h1.59l-.28 9.72H220.6v-1.55zM253.71 361.51c-2.51-1.66-4.35-3.79-5.54-6.41-1.19-2.61-1.78-5.38-1.78-8.29 0-2.78.62-5.49 1.86-8.12 1.23-2.63 3.08-4.79 5.54-6.5 2.46-1.7 5.44-2.56 8.95-2.56 3.6 0 6.66.85 9.18 2.56 2.52 1.71 4.41 3.87 5.66 6.5s1.88 5.34 1.88 8.12c0 2.76-.62 5.46-1.86 8.1-1.24 2.64-3.08 4.82-5.54 6.53-2.46 1.7-5.44 2.56-8.95 2.56-3.77 0-6.9-.83-9.4-2.49zm15.75-1.52c1.74-1.39 3.05-3.18 3.95-5.38.89-2.19 1.34-4.49 1.34-6.9 0-2.66-.49-5.23-1.46-7.72-.97-2.49-2.38-4.52-4.23-6.1-1.85-1.58-4.01-2.38-6.48-2.38-2.44 0-4.54.7-6.29 2.09-1.76 1.4-3.08 3.2-3.97 5.42-.89 2.22-1.34 4.54-1.34 6.95 0 2.47.46 4.95 1.36 7.44.91 2.49 2.28 4.56 4.13 6.2 1.85 1.65 4.08 2.47 6.71 2.47 2.45 0 4.54-.7 6.28-2.09zM291.37 362.01c-2.41-1.33-4.29-3.23-5.63-5.71-1.35-2.47-2.02-5.4-2.02-8.78 0-3.07.61-5.96 1.85-8.69 1.24-2.72 3.09-4.94 5.57-6.65 2.47-1.7 5.44-2.56 8.92-2.56 1.69 0 3.4.23 5.14.68 1.74.46 3.26 1.09 4.58 1.9l-.19-2.25h2.58v10.75h-1.69c-.22-2.88-1.26-5.13-3.12-6.76s-4.19-2.44-6.97-2.44c-2.22 0-4.25.64-6.08 1.93-1.83 1.28-3.29 3.06-4.37 5.33s-1.62 4.83-1.62 7.68c0 2.95.53 5.57 1.6 7.89 1.06 2.32 2.55 4.13 4.46 5.45 1.91 1.31 4.08 1.97 6.53 1.97 1.34 0 2.73-.19 4.16-.59 1.42-.39 2.72-.98 3.87-1.76v-10.29l-3.29.19v-2.07h10.61v1.55c-1.5 0-2.44.57-2.82 1.71s-.56 2.43-.56 3.87v7.18h-1.27c-1.32 0-3.01.4-5.07 1.22-.94.37-2.05.67-3.33.89-1.28.22-2.46.33-3.52.33-3.14.02-5.91-.64-8.32-1.97zM319.82 361.7c1.1-.03 1.88-.28 2.35-.75.47-.47.74-1.03.8-1.67.06-.64.09-1.76.09-3.35v-20.29c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h10.57v1.55c-1.1.03-1.88.28-2.35.75-.47.47-.74 1.02-.8 1.67-.06.64-.09 1.76-.09 3.36v19.96c0 1.66-.05 2.89-.14 3.71l3.38-.19v2.07h-10.57v-1.56zM335.55 361.7c1.1-.03 1.88-.28 2.35-.75.47-.47.74-1.03.8-1.67.06-.64.09-1.76.09-3.35v-20.29c0-1.32.05-2.44.14-3.38l-3.38.19v-2.07h22.59l.23 8.22h-1.55c0-2.57-.56-4.32-1.67-5.26-1.11-.94-2.67-1.38-4.67-1.31l-4.04.09c-1.13.03-1.94.25-2.44.63-.5.39-.81.94-.94 1.65-.13.7-.19 1.81-.19 3.31v7.51l8.83.05-.33-4.04h2.07v9.86h-1.55c0-1.16-.14-2.04-.42-2.65-.28-.61-.71-1.02-1.29-1.22-.58-.2-1.38-.31-2.42-.31l-1.46.05-3.43.14v10.75c0 1.63-.05 2.85-.14 3.66l8.97-.14c2.19-.03 3.87-.59 5.02-1.67s1.74-2.95 1.74-5.61h1.6l-.28 9.16h-24.23v-1.55zM371.31 363.39c-1.49-.41-2.79-1-3.92-1.78l.23 2.02h-2.44l-.28-10h1.83c.15 2.69 1.08 4.77 2.77 6.22 1.69 1.46 3.83 2.18 6.44 2.18 1.91 0 3.51-.52 4.81-1.57 1.3-1.05 1.95-2.48 1.95-4.29 0-1.35-.37-2.5-1.1-3.45a9.78 9.78 0 0 0-2.72-2.39c-1.08-.64-2.55-1.38-4.39-2.23-2.1-1-3.77-1.88-5-2.63a10.45 10.45 0 0 1-3.17-2.98c-.88-1.24-1.31-2.76-1.31-4.58 0-1.25.29-2.5.87-3.75.58-1.25 1.58-2.32 3.01-3.2 1.42-.88 3.31-1.31 5.66-1.31 1.41 0 2.82.18 4.25.54 1.42.36 2.73.98 3.92 1.86l-.19-2.02h2.39v10.33h-1.69c-.15-2.47-.94-4.56-2.37-6.27-1.42-1.7-3.42-2.56-5.99-2.56-1.88 0-3.35.53-4.41 1.57-1.06 1.05-1.59 2.36-1.59 3.92 0 1.25.36 2.33 1.08 3.24.72.91 1.6 1.66 2.63 2.26 1.03.59 2.49 1.33 4.37 2.2 2.13.97 3.84 1.85 5.14 2.63 1.3.79 2.4 1.81 3.31 3.08.91 1.27 1.36 2.83 1.36 4.67 0 1.76-.43 3.3-1.29 4.65-.86 1.34-2.12 2.39-3.78 3.14-1.66.75-3.63 1.13-5.92 1.13-1.5-.02-2.98-.22-4.46-.63z" />
+        <g>
+          <path
+            d="M196.41 31.17c10.8 0 19.55 8.75 19.55 19.55 0 10.79-8.75 19.55-19.55 19.55s-19.55-8.75-19.55-19.55c.01-10.79 8.76-19.55 19.55-19.55z" />
+          <circle cx="246.68" cy="100.99" r="19.55" />
+          <path
+            d="M246.68 131.71c10.79 0 19.55 8.75 19.55 19.55 0 10.79-8.75 19.55-19.55 19.55s-19.55-8.76-19.55-19.55c.01-10.8 8.76-19.55 19.55-19.55zM196.41 131.71c10.8 0 19.55 8.75 19.55 19.55 0 10.79-8.75 19.55-19.55 19.55s-19.55-8.76-19.55-19.55c.01-10.8 8.76-19.55 19.55-19.55zM146.14 131.71c10.8 0 19.55 8.75 19.55 19.55 0 10.79-8.75 19.55-19.55 19.55s-19.55-8.76-19.55-19.55c.01-10.8 8.76-19.55 19.55-19.55z" />
+        </g>
+      </svg>
+    </div>
+    <h1>Hultnér Technologies</h1>
+    <span id="cmocta">
+      <script>
+        document.getElementById(
+          "cmocta"
+        ).innerHTML = '<n uers="znvygb:pbagnpg@uhygare.fr" gnetrg="_oynax">./pbagnpg_hf</n>'.replace(
+          /[a-zA-Z]/g,
+          function (c) {
+            return String.fromCharCode(
+              (c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26
+            );
+          }
+        );
+      </script>
+      <noscript><span style="unicode-bidi: bidi-override; direction: rtl">es.rentluh@tcatnoc</span></noscript>
+    </span>
+  </header>
 
-<main>
-  <p>Hultnér Technologies specializes in digital product development, system architecture, technical speaking, and courses. Our primary focus and expertise is in Python and the React/JavaScript ecosystems.</p>
-  <h2>Articles</h2>
-  <p>
-    We publish our blog through <a href="https://medium.com/hultner">medium</a>, where all our articles can be read. Some recent articles are listed below.
-  </p>
-    
-  <ul>
-    <li>
-      <a href="https://medium.com/hultner/try-out-walrus-operator-in-python-3-8-d030ce0ce601">Try out the walrus operator in Python 3.8 — Get started with Python 3.8 alpha 1</a>
-      
-      <ul><li>Featured article on medium.com, Python Bytes podcast, PyCoder's Weekly, Google Chrome Content suggestions, and more.</li></ul>
-    </li>
-    <li>
-      <a href="https://medium.com/hultner/pytest-save-full-error-output-to-file-ee37d6ccbd32">pytest: Save full error output to file</a>
-    </li>
-    <li>
-      <a href="https://medium.com/hultner/convert-a-python-enum-to-json-5eb5e94ecc9">Convert a Python Enum to JSON</a>
-    </li>
-    <li>
-      <a href="https://medium.com/hultner/reflect-a-postgresql-view-in-pythons-sqlalchemy-a9e37ed70b4f">Reflect a PostgreSQL view in Python’s SQLAlchemy</a>
-    </li>
-    <li>
-      <a href="https://medium.com/hultner/how-to-write-bash-scripts-in-python-10c34a5c2df1">Toolchest for Python shell scripters — Banish growing bash scripts</a>
-    </li>
-    <li>
-      <a href="https://medium.com/hultner/scaling-engineering-efforts-in-software-639c4c8c85c7">Scaling engineering efforts in software — Organizational benefits of microservices</a>
-    </li>
-  </ul>
-        
-  <h2>Speaker</h2>
-  <p>
-    Our founder Alexander is a frequent speaker at conferences and events, a selection of recent appearances are listed below.
-  </p>
-  <p>
-    Contact us if you want Alex to speak or teach about a subject at your company or event.
-  </p>
-  <ul>
-    <li>
-        <a href="https://foss-north.se/2019/speakers-and-talks.html#ahultner">foss-north 2019: Test faster, fix more</a>, <a href="https://www.youtube.com/watch?v=qKHB0Xr-Yjg">YouTube video</a>
-    </li>
-    <li> 
-        <a href="https://www.meetup.com/GothPy/events/261643793/">GothPy June 2019: Hypothesis Testing</a>
-    </li>
-    <li>
-      <a href="https://www.youtube.com/watch?v=nwjWOaxWMes">PyCon SE 2018: Data Classes, in Python 3.6 and beyond by Alexander Hultnér</a>
-    </li>
-    <li>
-      <a href="https://www.meetup.com/GothPy/events/249499024/">GothPy 2018: Python Data Classes</a>
-    </li>
-    <li>
-      <a href="https://www.facebook.com/events/211932429367922/">Chalmers lunch seminar 2018: Build a Messenger bot</a>
-    </li>
-  </ul>
-</main>
+  <main>
+    <h2>Consulting</h2>
+    <p>
+      Hultnér Technologies specializes in digital product development, system
+      architecture, technical speaking, and courses. Our primary focus and
+      expertise is in <b>Python</b> and the React/JavaScript ecosystems.
+    </p>
 
-<footer>
-  <div>
-    <!-- Hi, I see that you found this part, feel free to contact me, details below.
+
+    <section>
+
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000"
+        style="width: 36px; float: left; margin-top:1.5em; margin-right: 0.75em;">
+        <defs>
+          <linearGradient id="a" x1="5081.27" y1="-1054.3" x2="5082.03" y2="-1054.3"
+            gradientTransform="matrix(169.84, 158.84, -169.85, 181.61, -1041634.52, -614968.11)"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ccc" />
+            <stop offset="0.45" stop-color="#e0e0e0" />
+            <stop offset="1" stop-color="#e6e6e6" />
+          </linearGradient>
+          <linearGradient id="b" x1="5086.63" y1="-1074.6" x2="5087.39" y2="-1074.6"
+            gradientTransform="translate(-1588996.48 2441791.3) rotate(-45) scale(560.28 560.62)"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#e6e6e6" />
+            <stop offset="0.46" stop-color="#e9e9e9" />
+            <stop offset="1" stop-color="#f2f2f2" />
+          </linearGradient>
+        </defs>
+        <circle cx="500" cy="500" r="500" style="fill:#4c4ad9" />
+        <path d="M507.47,602.36V860.05L379,739.8Z" style="fill-rule:evenodd;fill:url(#a)" />
+        <path d="M378.73,140l.15,599.85L678.73,440l-300-300Z" style="fill-rule:evenodd;fill:url(#b)" />
+        <path
+          d="M1371.25,341.37q32.87,14.88,50.64,42.24t17.76,64.8q0,37-17.76,64.56t-50.64,42.24q-32.88,14.64-77.52,14.64h-67.68v92.64h-77.76v-336h145.44Q1338.37,326.49,1371.25,341.37Zm-28.56,150q18.24-15.12,18.24-43,0-28.32-18.24-43.44t-53.28-15.12h-63.36V506.49h63.36Q1324.45,506.49,1342.69,491.37Z" />
+      </svg>
+      <h2>Papero.io</h2>
+      <p><a href="https://papero.io">Papero.io</a> is a SaaS service that creates PDFs from any website using common
+        web standards. Papero is developed as a collaboration between <a href="https://hultner.se">Hultnér
+          Technologies</a> and <a href="https://junghard.com/">Junghard Software</a>.
+
+      </p>
+    </section>
+
+    <h2>Articles</h2>
+    <p>
+      We publish our blog through
+      <a href="https://medium.com/hultner">medium</a>, where all our articles
+      can be read. Some recent articles are listed below.
+    </p>
+
+
+    <ul>
+      <li>
+        <a href="https://medium.com/hultner/try-out-walrus-operator-in-python-3-8-d030ce0ce601">Try out the walrus
+          operator in Python 3.8 — Get started with Python
+          3.8 alpha 1</a>
+        <br />
+        Featured article on medium.com, Python Bytes podcast, PyCoder's
+        Weekly, Google Chrome Content suggestions, and more.
+      </li>
+      <li>
+        <a href="https://medium.com/hultner/pytest-save-full-error-output-to-file-ee37d6ccbd32">pytest: Save full
+          error
+          output to file</a>
+      </li>
+      <li>
+        <a href="https://medium.com/hultner/convert-a-python-enum-to-json-5eb5e94ecc9">Convert a Python Enum to
+          JSON</a>
+      </li>
+      <li>
+        <a href="https://medium.com/hultner/reflect-a-postgresql-view-in-pythons-sqlalchemy-a9e37ed70b4f">Reflect a
+          PostgreSQL view in Python’s SQLAlchemy</a>
+      </li>
+      <li>
+        <a href="https://medium.com/hultner/how-to-write-bash-scripts-in-python-10c34a5c2df1">Toolchest for Python
+          shell
+          scripters — Banish growing bash
+          scripts</a>
+      </li>
+      <li>
+        <a href="https://medium.com/hultner/scaling-engineering-efforts-in-software-639c4c8c85c7">Scaling engineering
+          efforts in software — Organizational benefits
+          of microservices</a>
+      </li>
+    </ul>
+
+    <h2>Speaker / Workshops</h2>
+    <p>
+      Our founder Alexander is a frequent speaker at conferences and events, a
+      selection of recent appearances are listed below.
+    </p>
+    <p>
+      Contact us if you want Alex to speak or teach about a subject at your
+      company or event.
+    </p>
+    <ul>
+      <li>
+        <b>Python Web Conf 2021 (USA)</b>: Intro to Pydantic, Run-Time Type Checking
+        For Your Dataclasses
+        <br />
+        <a href="https://github.com/hultner-technologies/pydantic-introduction">GitHub</a>,
+        <a href="https://2021.pythonwebconf.com/speakers/alexander-hultner">Conference site</a>
+      </li>
+
+      <li>
+        <b>BelPy 2021 (India)</b>: Keynote Alexander Hultnér - The Evolution of
+        Modern Python
+        <br />
+        <a href="https://github.com/hultner-technologies/evolution-of-modern-python">GiHub</a>,
+        <a href="https://belpy.in/speakers.html">Conference site</a>
+      </li>
+
+      <li>
+        <b>PyCon Sweden 2020</b>: Keynote Alexander Hultnér - The Evolution of Modern
+        Python
+        <br />
+        <a href="https://github.com/hultner-technologies/pydantic-introduction">GitHub</a>,
+        <a href="https://www.pycon.se/#keynotes">Conference site</a>,
+        <a href="https://www.youtube.com/watch?v=e2oMEf0kOMI&list=PLYiwQPhFd9ciDlejf2aku5esxi3PFUbKx&index=1">YouTube
+          video</a>
+      </li>
+
+      <li>
+        <b>PiterPy 2020 (Russia)</b>: Alexander Hultnér: "Schema-based API-Testing –
+        Automatically generate test-cases with schemathesis"
+        <br />
+        <a href="https://github.com/hultner-technologies/Schema-based-API-Testing#-piterpy-2020-august-4">GitHub</a>,
+        <a href="https://piterpy.com/materials/2852#2852">Conference site</a>
+      </li>
+
+      <li>
+        <b>EuroPython 2020</b>: Alexander Hultnér - API-schema-based testing with
+        schemathesis.
+        <br />
+        <a href="https://github.com/hultner-technologies/Schema-based-API-Testing#-europython-2020-july-23">GitHub</a>,
+        <a href="https://www.youtube.com/watch?v=9FHRwrv-xuQ&list=PLYiwQPhFd9ciDlejf2aku5esxi3PFUbKx&index=3">YouTube
+          video</a>
+      </li>
+
+      <li>
+        <b>FlaskCon 2020</b>: Automatically generate test-cases – Schema-based API
+        testing - Alexander Hultnér
+        <br />
+        <a href="https://github.com/hultner-technologies/Schema-based-API-Testing#-flaskcon-2020-july-5">
+          GitHub</a>,
+        <a href="https://www.youtube.com/watch?v=1lo7idI7uq8&list=PLYiwQPhFd9ciDlejf2aku5esxi3PFUbKx&index=4">YouTube
+          video</a>
+      </li>
+
+      <li>
+        <b>YouTube</b>: Python pydantic Introduction - Give your data classes super
+        powers with pydantic
+        <br />
+        <a href="https://github.com/hultner-technologies/pydantic-introduction">GitHub</a>,
+        <a href="https://www.youtube.com/watch?v=WJmqgJn9TXg&list=PLYiwQPhFd9ciDlejf2aku5esxi3PFUbKx&index=8">YouTube
+          video</a>
+      </li>
+
+      <li>
+        <b>Python Pizza Remote 2020</b>: Give your data classes super powers with
+        pydantic
+        <br />
+        <a
+          href="https://github.com/hultner-technologies/pydantic-introduction#-python-pizza-2020-april-25-remote">GitHub</a>,
+        <a href="https://remote.python.pizza/">Conference site</a>
+      </li>
+
+      <li>
+        <b>Test & Code - Episode 107</b>: Property Based Testing in Python with
+        Hypothesis - Alexander Hultnér
+        <br />
+        <a href="https://testandcode.com/107">Listen to episode</a>,
+        <a href="https://github.com/Hultner/Test-faster-fix-more#-test--code-podcast-interview-march-27th-2020">
+          GitHub</a>
+      </li>
+
+      <li>
+        <b>PyCon Sweden 2019</b>: Test faster, fix more
+        <br />
+        <a href="https://www.youtube.com/watch?v=MKf6KfdTems">YouTube video</a>,
+        <a href="https://github.com/Hultner/Test-faster-fix-more#-pycon-sweden-oct-31---nov-1-2019-stockholm">
+          GitHub
+        </a>
+      </li>
+      <li>
+        <b>foss-north 2019</b>: Test faster, fix more
+        <br />
+        <a href="https://foss-north.se/2019/speakers-and-talks.html#ahultner">Conference site</a>,
+        <a href="https://www.youtube.com/watch?v=qKHB0Xr-Yjg">YouTube video</a>
+      </li>
+      <li>
+        <a href="https://www.meetup.com/GothPy/events/261643793/"><b>GothPy June 2019</b>: Hypothesis Testing</a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=nwjWOaxWMes"><b>PyCon SE 2018</b>: Data Classes, in Python 3.6 and
+          beyond by
+          Alexander
+          Hultnér</a>
+      </li>
+      <li>
+        <a href="https://www.meetup.com/GothPy/events/249499024/"><b>GothPy 2018:</b> Python Data Classes</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/events/211932429367922/"><b>Chalmers University of Technology 2018</b> : Build
+          a
+          Messenger
+          bot</a>
+      </li>
+    </ul>
+
+  </main>
+
+  <footer>
+    <div>
+      <!-- Hi, I see that you found this part, feel free to contact me, details below.
     <address>
       Phone: <a href="tel:+46733094141">+46 733 09 41 41</a><br>
       Hultnér Technologies AB<br>
@@ -110,11 +290,11 @@
       SWEDEN
     </address>
     -->
-    Copyright © 2019 Hultnér Technologies AB.
-    
-    <a href="#"><strong>Scroll to top</strong></a>
-  </div>
-</footer>
-  
+      Copyright © 2019 Hultnér Technologies AB.
+
+      <a href="#"><strong>Scroll to top</strong></a>
+    </div>
+  </footer>
 </body>
+
 </html>

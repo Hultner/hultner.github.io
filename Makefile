@@ -9,3 +9,14 @@ build:
 .PHONY: build-dev
 build-dev: 
 	sass scss/style.scss css/style.css
+
+
+.PHONY: install
+install:
+	npm install -g uglifycss
+	npm install -g sass
+
+
+.PHONY: server
+server:
+	python -m "http.server"

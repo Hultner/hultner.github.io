@@ -14,6 +14,7 @@ $header-font-stack: "Montserrat", "Helvetica", "Arial", sans-serif;
 
 $primary-color-alt: #AF1C1C;
 $primary-color: #FC4349;
+$link-color-on-white: #d62f3a;
 $background-white: white;
 $background-dark: #2C3E50;
 
@@ -118,9 +119,15 @@ h4 {
   font-family: $header-font-stack;
 }
 
+
 h2 {
   margin-top: 1em;
   padding-top: 1em;
+}
+
+main>h2:first-of-type{
+  padding-top: 0em;
+  margin-top: 0em;
 }
 
 code,
@@ -141,7 +148,11 @@ pre {
 }
 
 a {
-  color: $primary-color;
+  color: $link-color-on-white;
+}
+
+a:hover {
+    color: $primary-color;
 }
 
 footer{

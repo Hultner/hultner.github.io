@@ -78,6 +78,8 @@ header a {
   transition: none 200ms ease-out;
   transition-property: color, background;
   text-shadow: $header-text-shadow;
+  background: rgba(44, 62, 80, 0.6);
+
 }
 
 header a:hover {

@@ -196,3 +196,6 @@ GitHub.sublime-settings
 # End of https://www.gitignore.io/api/node,python,sublimetext
 # Editor
 *.sw[pon]
+
+# macOS
+.DS_Store
